@@ -1,16 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lahcene Mezouari portfolio lahcene</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lahcene Mezouari — Maître de conférences (CNU 27/61)</title>
+    <meta name="description"
+        content="Site académique de Lahcene Mezouari : recherche en optimisation combinatoire et enseignement en informatique." />
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <header>
 
-        <h1>Bienvenue sur Mon Site</h1>
+    <header class="topbar">
+        <a class="brand" href="index.html">Lahcene Mezouari</a>
 
+        <button class="burger" aria-label="Ouvrir le menu">
+            ☰
+        </button>
+
+        <nav class="menu">
+            <a href="index.html" class="active">Accueil</a>
+            <a href="enseignement.html">Enseignement</a>
+            <a href="#recherche">Recherche</a>
+            <a href="#publications">Publications</a>
+            <a href="#cv">CV</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
+
+    <main class="container">
+
+        <!-- HERO -->
+        <section class="section">
+            <h1>Lahcene Mezouari</h1>
+
+            <p class="lead">
+                Docteur en Informatique — Recherche opérationnelle et optimisation combinatoire.
+                ATER à l’Université du Littoral Côte d’Opale (ULCO).
+                Qualification CNU sections 27 et 61.
+            </p>
+
+            <div class="note">
+                Domaines : planification et ordonnancement en santé, métaheuristiques (ALNS),
+                pilotage adaptatif par apprentissage, problèmes de routage de véhicules (VRP).
+            </div>
+
+            <p style="margin-top:20px;">
+                <a class="btn" href="enseignement.html">Voir les enseignements</a>
+                <a class="btn" href="#recherche">Voir la recherche</a>
+            </p>
+        </section>
+
+        <!-- RECHERCHE -->
+        <section id="recherche" class="section">
+            <h2>Recherche</h2>
+
+            <p>
+                Mes travaux portent sur la modélisation et la résolution de problèmes
+                d’optimisation combinatoire en contextes statiques et dynamiques.
+            </p>
+
+            <div class="grid">
+
+                <article class="card">
+                    <h2>Planification en systèmes de santé</h2>
+                    <ul>
+                        <li>Ordonnancement des parcours patients aux urgences</li>
+                        <li>Planification des interventions chirurgicales</li>
+                        <li>Approches prédictives–réactives</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h2>Métaheuristiques et apprentissage</h2>
+                    <ul>
+                        <li>ALNS (Adaptive Large Neighborhood Search)</li>
+                        <li>Sélection adaptative des voisinages</li>
+                        <li>Apprentissage par renforcement</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h2>Logistique et VRP</h2>
+                    <ul>
+                        <li>Collecte de déchets</li>
+                        <li>Orienteering Problem / OPHS</li>
+                        <li>Contraintes industrielles réelles</li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- PUBLICATIONS -->
+        <section id="publications" class="section">
+            <h2>Publications sélectionnées</h2>
+
+            <ol>
+                <li>
+                    <strong>Surgery planning for elective patients:</strong> A dedicated heuristic and an effective
+                    ALNS.
+                    Engineering Applications of Artificial Intelligence (2022).
+                </li>
+                <li>
+                    <strong>Scheduling patient pathways in an emergency department:</strong> ILP model and IDCH
+                    approach.
+                    CoDIT 2023.
+                </li>
+            </ol>
+
+            <p class="muted">
+                Voir CV pour la liste complète.
+            </p>
+        </section>
+
+        <!-- CV -->
+        <section id="cv" class="section">
+            <h2>Curriculum Vitae</h2>
+
+            <p>
+                <a class="btn" href="assets/CV.pdf" target="_blank">
+                    Télécharger le CV (PDF)
+                </a>
+            </p>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+
+            <ul>
+                <li>Email : lahcenemezouari@gmail.com</li>
+                <li>Téléphone : +33 7 67 60 63 12</li>
+                <li>LinkedIn : linkedin.com/in/lahcene-mezouari</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Lahcene Mezouari</p>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
